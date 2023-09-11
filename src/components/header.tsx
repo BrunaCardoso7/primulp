@@ -11,21 +11,27 @@ const TagHeader = styled.header`
     align-items: center;
     background-color: #FE0000;
     width: 100vw;
+    padding: 0 30px;
    
 `
 const Conteiner = styled.div`
-    max-width: 80vw; 
+    min-width: 80vw; 
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
-    gap: 300px;
+    justify-content: space-between;
+    gap: 10%;
+    padding: 0 30px;
+    @media screen  and (max-width: 942px){
+        gap: 0%;
+    }
 `
 const Logo = styled.a`
     display: flex;
     flex-direction: column;
     font-size: 2.2rem;
     line-height: 19px;
-    padding: 18px;
+    padding: 12px;
     color: #FFFFFF;
     font-weight: 700;
     cursor: pointer;
@@ -36,13 +42,13 @@ const Logo = styled.a`
 const NavBar = styled.nav`
     display: flex;
     gap: 50px;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     align-items: center;
     a{
         color: #FFFFFF;
     }
     a:hover{
-        color: #FFFF00;
+        color: black;
     }
 `
 const Button = styled.button`
